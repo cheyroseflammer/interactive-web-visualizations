@@ -20,6 +20,18 @@ function init() {
 }
 // Initialize dashboard app
 init()
+
+
+// ON CHANGE
+
+function optionChanged(newSample) {
+  // Fetch new data each time a new sample is selected
+  metaData(newSample);
+  buildViz(newSample);
+}
+
+
+
 //  Metadata panel
 function metaData(sample) {
   d3.json("samples.json").then((data) => {
