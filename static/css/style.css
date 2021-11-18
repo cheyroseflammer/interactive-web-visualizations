@@ -1,31 +1,44 @@
 /* GOOGLE FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Karla&family=Montserrat&family=Open+Sans&display=swap');
 /* STYLING */
+
+
+
 body {
+  background-color: black !important;
+  color: white !important;
+  font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-body, .sample-metadata, #sample-metadata {
+
+.row {
+  background-color: black;
+  color: white;
+}
+
+.sample-metadata, #sample-metadata {
   background-color: black;
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
 .sample-metadata, #sample-metadata, .panel-heading {
-  background-color: #0d0d0d;
   margin: -1px
 }
-.well {
-  background-color: #0d0d0d;
+div .well {
   border: 0px;
   border-radius: 0px;
   margin-bottom: 5rem;
+  background-color: black;
+  color: white;
+  border: 3px solid white;
 }
 h3 {
   text-align: center;
 }
 .jumbotron {
-  background-color: black;
+  background-color: black !important;
   color: white;
   border: 3px solid white;
   border-radius: 10px;
@@ -54,33 +67,6 @@ footer {
 
 /* TEST */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
-  body{
-    background-color: green
-  }
-}
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-  body{
-    background-color: red
-  }
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  body{
-    background-color: yellow
-  }
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-  body{
-    background-color: black
-  }
-}
 
 
 
